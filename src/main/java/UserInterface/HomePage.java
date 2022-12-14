@@ -11,7 +11,7 @@ public class HomePage extends PageObject {
 
     public static final Target ClickElements = Target
             .the("Click en Elements")
-            .located(By.xpath("//*[name()='path' and contains(@d,'M16 132h416c8')]"));
+            .located(By.xpath("(//div[@class='card-up'])[1]"));
     public static final Target ClickWidgets = Target
             .the("Click en Widgets")
             .located(By.xpath("(//div[@class='card-up'])[4]"));

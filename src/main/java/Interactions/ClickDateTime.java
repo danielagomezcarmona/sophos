@@ -1,18 +1,30 @@
 package Interactions;
 
+import UserInterface.SelectPage;
 import UserInterface.WidgetPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
-import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.*;
+import net.thucydides.core.pages.components.Dropdown;
 
 public class ClickDateTime implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
+        try{
         actor.attemptsTo(
+                Click.on(WidgetPage.ClickOption),
                 Click.on(WidgetPage.ClickDate2),
-                Click.on(WidgetPage.ClickTime)
+                new MoveMouseToTarget(WidgetPage.ClickTime)
         );
+            Thread.sleep(2000);
+            actor.attemptsTo(
+                    new ScrollToTarget(WidgetPage.SelectTime),
+                    Click.on(WidgetPage.SelectTime));
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 

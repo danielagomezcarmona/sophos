@@ -1,39 +1,33 @@
 package Task;
 
-import UserInterface.WebTablePage;
-import Util.FillForm;
+import UserInterface.SignUpPage;
+import Util.GetCellValue;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
-import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
-import net.thucydides.junit.annotations.UseTestDataFrom;
+import net.serenitybdd.screenplay.actions.Enter;
 
-@UseTestDataFrom(value = "testdata/users.csv")
+import static net.serenitybdd.screenplay.Tasks.instrumented;
+
 public class FullData implements Task {
 
-    private String firstname;
-    private String lastname;
-    private String email;
-    private String age;
-    private String salary;
-    private String department;
+    public static FullData datos (){ return instrumented(FullData.class);}
 
     @Override
     public <T extends Actor> void performAs(T actor) {
+        try{
         actor.attemptsTo(
-                FillForm.firstname(firstname),
-                FillForm.lastName(lastname),
-                FillForm.email(email),
-                FillForm.age(age),
-                FillForm.salary(salary),
-                FillForm.department(department),
-                Click.on(WebTablePage.ClickSubmit)
-
+                Enter.theValue(GetCellValue.getStringCellValueExcel("Hoja1",0,0)).into(SignUpPage.FIRSTNAME),
+                Enter.theValue(GetCellValue.getStringCellValueExcel("Hoja1",0,1)).into(SignUpPage.LASTNAME),
+                Enter.theValue(GetCellValue.getStringCellValueExcel("Hoja1",0,2)).into(SignUpPage.EMAIL),
+                Enter.theValue(GetCellValue.getStringCellValueExcel("Hoja1",0,3)).into(SignUpPage.AGE),
+                Enter.theValue(GetCellValue.getStringCellValueExcel("Hoja1",0,4)).into(SignUpPage.SALARY),
+                Enter.theValue(GetCellValue.getStringCellValueExcel("Hoja1",0,5)).into(SignUpPage.DEPARTMENT),
+                Click.on(SignUpPage.ClickSubmit)
         );
-
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
-
-    public static FullData data() {return Tasks.instrumented(FullData.class);
-    }
-
 }

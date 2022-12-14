@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 08-12-2022 15:49</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 10-12-2022 17:53</span>
     <br style="clear:left"/>
 </div>
 
@@ -189,9 +189,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Should user sign up successfully when she fill the form
+                                <span class="error-color">Should user sign up successfully when she fill the form
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -207,51 +207,72 @@
 
     <div class="story-title">
         <h3>Scenario:</h3>
-        <div class="scenario">Usuario opens the Sign Up  page<br>Usuario clicks on Click en adicionar registro<br>Usuario enters first name '&lt;firstname&gt;'<br>Usuario enters last name '&lt;lastname&gt;'<br>Usuario enters email '&lt;email&gt;'<br>Usuario enters age '&lt;age&gt;'<br>Usuario enters salary '&lt;salary&gt;'<br>Usuario enters department '&lt;department&gt;'<br>Usuario clicks on Click en submit</div>
+        <div class="scenario">Given ^El cliente esta ubicado en el home de la aplicacion$<br>When ^Selecciona la opcion de Elements$<br>Usuario select web t<br>Usuario add register<br>Then ^Guarda los datos del formulario diligenciado$</div>
     </div>
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Null pointer exception</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.NullPointerException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>Util.FillForm.firstname(FillForm.java:14)<br />Task.FullData.performAs(FullData.java:23)<br />co.com.demoqa.StepDefinitions.reto.Flujo1Step.guardaLosDatosDelFormularioDiligenciado(Flujo1Step.java:57)<br />co.com.demoqa.Runners.reto.ParaTest.should_UserSignUpSuccessfully_When_She_FillTheForm(ParaTest.java:48)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource8532376786846477532.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="aef01e10bef36255fbfd96d5c2927a30c404516c1df6e36dee0685165fce61ad.png" title=" Should user sign up successfully when she fill the form " width="1920"/>
-                <img src="aef01e10bef36255fbfd96d5c2927a30c404516c1df6e36dee0685165fce61ad.png" title=" Usuario opens the Sign Up  page" width="1920"/>
-                <img src="aef01e10bef36255fbfd96d5c2927a30c404516c1df6e36dee0685165fce61ad.png" title=" Usuario opens the https://demoqa.com/webtables" width="1920"/>
-                <img src="0797dd45a1c6522a9d8ae271449de945d3b4229e0d59401edefb7d0051e3c5c4.png" title=" Usuario opens the https://demoqa.com/webtables (completed)" width="1920"/>
-                <img src="0797dd45a1c6522a9d8ae271449de945d3b4229e0d59401edefb7d0051e3c5c4.png" title=" Usuario opens the Sign Up  page (completed)" width="1920"/>
-                <img src="d8c60bc6fbf9f848929650c468914866c61dd26c81bbf79013cacd906b6e01e2.png" title=" Usuario clicks on Click en adicionar registro" width="1920"/>
-                <img src="5cc1273a8263a648def027f6f82f50958a03c67b15f199c3b6ba3c9cd535a7a3.png" title=" Usuario clicks on Click en adicionar registro (completed)" width="1920"/>
-                <img src="d62eae08fb5338ed45444ced30b4e3f1c429902ad7d158ca31e4aab892ef67c2.png" title=" Usuario enters first name 'Daniela'" width="1920"/>
-                <img src="d62eae08fb5338ed45444ced30b4e3f1c429902ad7d158ca31e4aab892ef67c2.png" title=" Usuario clears field Nombre" width="1920"/>
-                <img src="d62eae08fb5338ed45444ced30b4e3f1c429902ad7d158ca31e4aab892ef67c2.png" title=" Usuario enters 'Daniela' into Nombre" width="1920"/>
-                <img src="085f44dbe8c59ff50164e34f02c32613d78a748ebe074a13518093578aff8179.png" title=" Usuario enters 'Daniela' into Nombre (completed)" width="1920"/>
-                <img src="085f44dbe8c59ff50164e34f02c32613d78a748ebe074a13518093578aff8179.png" title=" Usuario enters first name 'Daniela' (completed)" width="1920"/>
-                <img src="cc19e8cc959dd144338dc53de9aa93b803b7255accf2a0befbfe914521d363d7.png" title=" Usuario enters last name 'Gomez'" width="1920"/>
-                <img src="cc19e8cc959dd144338dc53de9aa93b803b7255accf2a0befbfe914521d363d7.png" title=" Usuario clears field Apellido" width="1920"/>
-                <img src="cc19e8cc959dd144338dc53de9aa93b803b7255accf2a0befbfe914521d363d7.png" title=" Usuario enters 'Gomez' into Apellido" width="1920"/>
-                <img src="471ab5175566c923d52fc685de1ad1beaa62bd006a33b72d762c30791a874255.png" title=" Usuario enters 'Gomez' into Apellido (completed)" width="1920"/>
-                <img src="471ab5175566c923d52fc685de1ad1beaa62bd006a33b72d762c30791a874255.png" title=" Usuario enters last name 'Gomez' (completed)" width="1920"/>
-                <img src="550723502f80a5813a8dfa9888d79863eb92c6bc21495db399067f0dd84dae37.png" title=" Usuario enters email 'dan@prueba.com'" width="1920"/>
-                <img src="550723502f80a5813a8dfa9888d79863eb92c6bc21495db399067f0dd84dae37.png" title=" Usuario clears field Correo" width="1920"/>
-                <img src="550723502f80a5813a8dfa9888d79863eb92c6bc21495db399067f0dd84dae37.png" title=" Usuario enters 'dan@prueba.com' into Correo" width="1920"/>
-                <img src="f6d443655a8fee15f693c0efc5c068008a872bb335afaad4a39fde851df71305.png" title=" Usuario enters 'dan@prueba.com' into Correo (completed)" width="1920"/>
-                <img src="f6d443655a8fee15f693c0efc5c068008a872bb335afaad4a39fde851df71305.png" title=" Usuario enters email 'dan@prueba.com' (completed)" width="1920"/>
-                <img src="264731c579305cd560bf7dfe07ba27295a627b7390e9542fdf8436cf7b42c1ac.png" title=" Usuario enters age '28'" width="1920"/>
-                <img src="264731c579305cd560bf7dfe07ba27295a627b7390e9542fdf8436cf7b42c1ac.png" title=" Usuario clears field Edad" width="1920"/>
-                <img src="264731c579305cd560bf7dfe07ba27295a627b7390e9542fdf8436cf7b42c1ac.png" title=" Usuario enters '28' into Edad" width="1920"/>
-                <img src="0159679b5c19ebdd0141a6cab48addf84b221afefd29727999f17a25ffb4ccbf.png" title=" Usuario enters '28' into Edad (completed)" width="1920"/>
-                <img src="0159679b5c19ebdd0141a6cab48addf84b221afefd29727999f17a25ffb4ccbf.png" title=" Usuario enters age '28' (completed)" width="1920"/>
-                <img src="52de26674e73c9ed451c9c579873a256d6c8db7ef24822f6b6443ca4d2ac5e61.png" title=" Usuario enters salary '3000'" width="1920"/>
-                <img src="52de26674e73c9ed451c9c579873a256d6c8db7ef24822f6b6443ca4d2ac5e61.png" title=" Usuario clears field Salario" width="1920"/>
-                <img src="52de26674e73c9ed451c9c579873a256d6c8db7ef24822f6b6443ca4d2ac5e61.png" title=" Usuario enters '3000' into Salario" width="1920"/>
-                <img src="cd82c98bee3b5b50c47cac205b9da969febd8ecef30c26c0cd95bff0a91c44e8.png" title=" Usuario enters '3000' into Salario (completed)" width="1920"/>
-                <img src="cd82c98bee3b5b50c47cac205b9da969febd8ecef30c26c0cd95bff0a91c44e8.png" title=" Usuario enters salary '3000' (completed)" width="1920"/>
-                <img src="af28ecb8d9dacbe176f48edccc920cd74c91b9f206230b5e1e9fe9e795922334.png" title=" Usuario enters department 'Sells'" width="1920"/>
-                <img src="af28ecb8d9dacbe176f48edccc920cd74c91b9f206230b5e1e9fe9e795922334.png" title=" Usuario clears field Departamento" width="1920"/>
-                <img src="af28ecb8d9dacbe176f48edccc920cd74c91b9f206230b5e1e9fe9e795922334.png" title=" Usuario enters 'Sells' into Departamento" width="1920"/>
-                <img src="7c1a452496e7d15476d609ce13390cae4e758f13efb6af2dab3620e91c2fc4f2.png" title=" Usuario enters 'Sells' into Departamento (completed)" width="1920"/>
-                <img src="7c1a452496e7d15476d609ce13390cae4e758f13efb6af2dab3620e91c2fc4f2.png" title=" Usuario enters department 'Sells' (completed)" width="1920"/>
-                <img src="6241e42ceb2bef3dd0bf94ed38ee190b6444b46c424852398f7274048aa4dfa3.png" title=" Usuario clicks on Click en submit: <span class='success-color'>SUCCESS</span>" width="1920"/>
+                <img src="aef01e10bef36255fbfd96d5c2927a30c404516c1df6e36dee0685165fce61ad.png" title=" Given ^El cliente esta ubicado en el home de la aplicacion$" width="1920"/>
+                <img src="aef01e10bef36255fbfd96d5c2927a30c404516c1df6e36dee0685165fce61ad.png" title=" Usuario opens the Home page" width="1920"/>
+                <img src="02db0dcd418bc87576a4c583bcfe44173b92f5002acb7fcec1aec222914f7b1b.png" title=" Usuario opens the Home page (completed)" width="1920"/>
+                <img src="02db0dcd418bc87576a4c583bcfe44173b92f5002acb7fcec1aec222914f7b1b.png" title=" Given ^El cliente esta ubicado en el home de la aplicacion$ (completed)" width="1920"/>
+                <img src="55c26e2cc556b2afab05ca03e55aade564719a2f4dc1d7adf35bcc3bdad9681d.png" title=" When ^Selecciona la opcion de Elements$" width="1920"/>
+                <img src="55c26e2cc556b2afab05ca03e55aade564719a2f4dc1d7adf35bcc3bdad9681d.png" title=" Usuario select element" width="1920"/>
+                <img src="55c26e2cc556b2afab05ca03e55aade564719a2f4dc1d7adf35bcc3bdad9681d.png" title=" Usuario clicks on Click en Elements" width="1920"/>
+                <img src="55c26e2cc556b2afab05ca03e55aade564719a2f4dc1d7adf35bcc3bdad9681d.png" title=" Usuario select element (completed)" width="1920"/>
+                <img src="55c26e2cc556b2afab05ca03e55aade564719a2f4dc1d7adf35bcc3bdad9681d.png" title=" When ^Selecciona la opcion de Elements$ (completed)" width="1920"/>
+                <img src="78645e6a97dd23577456238e61cd5c6d40bbd825218babd4806b5b86330a9088.png" title=" Usuario select web t" width="1920"/>
+                <img src="78645e6a97dd23577456238e61cd5c6d40bbd825218babd4806b5b86330a9088.png" title=" Usuario clicks on Click en Web-Tables" width="1920"/>
+                <img src="ad86f41c67416b550c959948caa9738c285e3a25e12fd7f8a4bfc9ab6648cb7d.png" title=" Usuario clicks on Click en Web-Tables (completed)" width="1920"/>
+                <img src="ad86f41c67416b550c959948caa9738c285e3a25e12fd7f8a4bfc9ab6648cb7d.png" title=" Usuario select web t (completed)" width="1920"/>
+                <img src="2e1bd7b89f4af40077f7df3f65b53f8caf9e245d8c2bf0d5514520417ac37ee0.png" title=" Usuario add register" width="1920"/>
+                <img src="2e1bd7b89f4af40077f7df3f65b53f8caf9e245d8c2bf0d5514520417ac37ee0.png" title=" Usuario clicks on Click en adicionar registro" width="1920"/>
+                <img src="258e56883c40be4b4998398a29673fe248986d9eeb0f6e85f2f4e5f6a8d55a02.png" title=" Usuario clicks on Click en adicionar registro (completed)" width="1920"/>
+                <img src="258e56883c40be4b4998398a29673fe248986d9eeb0f6e85f2f4e5f6a8d55a02.png" title=" Usuario add register (completed)" width="1920"/>
+                <img src="258e56883c40be4b4998398a29673fe248986d9eeb0f6e85f2f4e5f6a8d55a02.png" title=" Then ^Guarda los datos del formulario diligenciado$" width="1920"/>
+                <img src="1ec2a9c1d48e42b971566240454fd81864db2faa33b5f7ac9966d64e9d90f15b.png" title=" Usuario full data: <span class='error-color'>ERROR</span>" width="1920"/>
             </div>
         </div>
 

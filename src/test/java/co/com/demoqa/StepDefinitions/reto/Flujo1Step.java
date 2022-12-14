@@ -1,19 +1,23 @@
 package co.com.demoqa.StepDefinitions.reto;
 
-import Task.AddRegister;
-import Task.FullData;
-import Task.SelectElement;
-import Task.SelectWebT;
+import Task.*;
 import UserInterface.HomePage;
+import UserInterface.SignUpPage;
+import UserInterface.WebTablePage;
+import Util.GetCellValue;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import exceptions.DemoException;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import questions.ValidateText;
 
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.*;
+import static org.hamcrest.CoreMatchers.equalTo;
 
 public class Flujo1Step {
 
@@ -44,15 +48,18 @@ public class Flujo1Step {
 
     @Then("^Guarda los datos del formulario diligenciado$")
     public void guardaLosDatosDelFormularioDiligenciado() {
-        theActorInTheSpotlight().attemptsTo(FullData.data());
+        theActorInTheSpotlight().attemptsTo(FullData.datos());
     }
 
     @And("^Agrega un registro completo exitosamente$")
     public void agregaUnRegistroCompletoExitosamente() {
+        theActorInTheSpotlight().should(seeThat(ValidateText.getText(WebTablePage.VerifyData),
+                equalTo(GetCellValue.getStringCellValueExcel("Hoja1",0,0))).orComplainWith(DemoException.class, "El valor obtenido difiere del esperado"));
     }
 
     @And("^Elimina cualquier registro completo exitosamente$")
     public void eliminaCualquierRegistroCompletoExitosamente() {
+        theActorInTheSpotlight().attemptsTo(DeleteData.dat());
     }
 
 }

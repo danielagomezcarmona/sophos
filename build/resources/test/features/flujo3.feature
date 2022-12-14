@@ -8,6 +8,8 @@ Feature: Interactuar con las ventanas emergentes en Alerts de la opcion de Alert
     And Selecciona el segundo boton y cierra la ventana emergente
     And Selecciona el tercer boton y cierra la ventana emergente
     And Selecciona el cuarto boton ingresa el nombre y cierra la ventana emergente
-    And Verifica de manera exitosa el nombre
+    And Verifica de manera exitosa el dato
+
+
 
 

@@ -5,11 +5,11 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
 import net.serenitybdd.screenplay.targets.Target;
 
-public class ValidateTextF3 implements Question<String> {
+public class ValidateText implements Question<String> {
 
     private Target target;
 
-    public ValidateTextF3(Target target) {
+    public ValidateText(Target target) {
         this.target = target;
     }
 
@@ -18,7 +18,7 @@ public class ValidateTextF3 implements Question<String> {
         return Text.of(target).viewedBy(actor).asString();
     }
 
-    public static ValidateTextF3 getText(Target target){
-        return new ValidateTextF3(target);
+    public static ValidateText getText(Target target){
+        return new ValidateText(target);
 }
 }

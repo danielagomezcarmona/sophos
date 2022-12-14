@@ -18,4 +18,5 @@ public class SignUpPage {
             .the("Departamento").located(By.id("department"));
     public static final Target ClickSubmit = Target
             .the("Click en submit").located(By.xpath("//button[@id='submit']"));
+
 }

@@ -22,5 +22,8 @@ public class AlertsPage extends PageObject {
     public static final Target ClickBoton4 = Target
             .the("Click en cuarto boton")
             .located(By.id("promtButton"));
+    public static final Target TextoNombre = Target
+            .the("Nombre ingresado en campo")
+            .located(By.id("promptResult"));
 
 }
