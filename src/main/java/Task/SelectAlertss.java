@@ -1,6 +1,5 @@
 package Task;
 
-import UserInterface.HomePage;
 import UserInterface.SelectPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;

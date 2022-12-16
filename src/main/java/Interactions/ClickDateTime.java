@@ -1,12 +1,10 @@
 package Interactions;
 
-import UserInterface.SelectPage;
 import UserInterface.WidgetPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.*;
-import net.thucydides.core.pages.components.Dropdown;
 
 public class ClickDateTime implements Task {
     @Override

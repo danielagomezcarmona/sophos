@@ -1,8 +1,6 @@
 package Task;
 
-import UserInterface.SignUpPage;
 import UserInterface.WebTablePage;
-import cucumber.api.java.hu.De;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;

@@ -1,6 +1,5 @@
 package UserInterface;
 
-import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
