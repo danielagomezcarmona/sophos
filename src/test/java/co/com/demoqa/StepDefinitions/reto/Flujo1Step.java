@@ -40,13 +40,8 @@ public class Flujo1Step {
         theActorInTheSpotlight().attemptsTo(SelectWebT.webtables());
     }
 
-    @And("^Selecciona agregar registro$")
-    public void seleccionaAgregarRegistro() {
-        theActorInTheSpotlight().attemptsTo(AddRegister.register());
-    }
-
-    @Then("^Guarda los datos del formulario diligenciado$")
-    public void guardaLosDatosDelFormularioDiligenciado() {
+    @Then("^Ingresa los datos en el formulario diligenciado$")
+    public void ingresaLosDatosEnElFormularioDiligenciado() {
         theActorInTheSpotlight().attemptsTo(FullData.datos());
     }
 

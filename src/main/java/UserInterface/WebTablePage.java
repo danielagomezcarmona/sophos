@@ -12,8 +12,10 @@ public class WebTablePage extends PageObject {
             .the("Click en adicionar registro")
             .located(By.id("addNewRecordButton"));
     public static final Target VerifyData = Target
-            .the("Verificación de datos").located(By.xpath("//div[normalize-space()='Daniela']"));
+            .the("Verificación de datos")
+            .located(By.xpath("//div[normalize-space()='Daniela']"));
     public static final Target DeleteData = Target
-            .the("Eliminación de datos").located(By.xpath("//span[@id='delete-record-2']//*[name()='svg']//*[name()='path' and contains(@d,'M864 256H7')]"));
+            .the("Eliminación de datos")
+            .located(By.xpath("//span[@id='delete-record-2']//*[name()='svg']//*[name()='path' and contains(@d,'M864 256H7')]"));
 }
 

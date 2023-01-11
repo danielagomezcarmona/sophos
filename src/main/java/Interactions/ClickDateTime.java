@@ -11,7 +11,10 @@ public class ClickDateTime implements Task {
     public <T extends Actor> void performAs(T actor) {
         try{
         actor.attemptsTo(
-                Click.on(WidgetPage.ClickOption),
+                Click.on(WidgetPage.ClickYear),
+                Click.on(WidgetPage.SelectYear),
+                Click.on(WidgetPage.ClickMonth),
+                Click.on(WidgetPage.SelectMonth),
                 Click.on(WidgetPage.ClickDate2),
                 new MoveMouseToTarget(WidgetPage.ClickTime)
         );
